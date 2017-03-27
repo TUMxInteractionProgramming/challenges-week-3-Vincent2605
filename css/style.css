@@ -1,0 +1,145 @@
+/* #4 #sweat #external css file */
+
+/* GLOBAL */
+
+/* #4 #global styles*/
+
+* {
+    /* #4 use #roboto #font */
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+     /* #4 #sweat take care of #spacing between various elements */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+/* #4 # sweat #uppercase buttons and w3w locations */
+button, strong {
+    text-transform: uppercase;
+}
+
+
+
+/* APP BAR */
+
+/* #4 #sweat address both #app-bar s */
+h1 {
+    background-color: #3F51B5;
+    color: white;
+}
+
+
+/* CHANNELS LIST */
+
+/* #4 #sweat #channels */
+ul {
+    /* #3 #channels #list modifies h2 to ul */
+    background-color: white;
+    /* #3 #channels #bullets removed */
+    list-style-type: none;
+}
+
+li {
+    /* #4 #channel #tile geometry */
+    box-sizing: border-box;
+    height: 48px;
+    padding: 16px;
+    font-size: 16px;
+    /* #4 #channel tiles are separated by #lines */
+    border-bottom: 1px solid #F5F5F5;
+}
+
+/* #4 active #channel is #highlighted */
+li.selected {
+    color: #3F51B5;
+    border-left: 4px solid #3F51B5;
+}
+
+li img {
+    /* #4 #middle vertical alignment of icons in the #channels list */
+    vertical-align: middle;
+}
+
+/* TAB BAR */
+
+/* #4 #sweat #tab-bar */
+#tab-bar {
+    /* #3 #tab-bar #container should be white */
+    background-color: white;
+    /* #3 #tab-bar #container has all buttons centered */
+    text-align: center;
+}
+
+/* #4 add styles to #tab-bar #buttons */
+#tab-bar button {
+    background-color: white;
+    border: none;
+    font-size: 13px;
+
+    /* #4 #tab-bar buttons have a width of #one-third of the available space */
+    width: 33%;
+    height: 72px;
+    padding: 16px;
+}
+
+/* #4 #tab-bar buttons do have a #line-break and images are centered due to the left&right auto margin */
+#tab-bar button img {
+    display: block;
+    margin: 0 auto 4px auto;
+}
+
+/* #4 the selected #tab-bar #button is #highlighted */
+#tab-bar button.selected {
+    color: #3F51B5;
+    border-bottom: 4px solid #3F51B5;
+}
+
+
+/* MESSAGES */
+/* #4 select #specific #messages by class and re-assign element styles according to their #hierarchy in a nested way */
+.message {
+    /* #3 #chat #width*/
+    width: 80%;
+
+    /* #4 align all #messages using #margins */
+    margin-left: 2.5%;
+
+    /* #4 #message distance to next message container*/
+    margin-bottom: 8px;
+}
+
+
+.message h3 {
+    font-size: medium;
+}
+
+.message h3 em {
+    font-size: larger;
+    font-style: normal;
+}
+
+.message h3 a {
+    /* #3 #chat #link color is primary text */
+    color: black;
+}
+
+.message p {
+    background-color: white;
+    padding: 16px;
+}
+
+.message button {
+    background-color: #CDDC39;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* #4 left align own #messages using #margins */
+.message.own {
+    margin-left: 17.5%;
+}
+
