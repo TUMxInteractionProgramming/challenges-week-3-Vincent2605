@@ -33,7 +33,7 @@
             <li onclick="switchChannel('#FirstPersonMars'); dislikeChannel();">#FirstPersonMars
                 <img src="https://ip.lfe.mw.tum.de/sections/star-o.png" alt="no favorite">
                 <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="arrow"></li>
-            <li id="selected-channel" onclick="switchChannel('#Oktoberfest'); dislikeChannel();">#Octoberfest
+            <li class="selected-channel" onclick="switchChannel('#Oktoberfest'); dislikeChannel();">#Octoberfest
                 <img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="favorite">
                 <img src="http://ip.lfe.mw.tum.de/sections/chevron-right.png" alt="arrow"></li>            
         </ul>
@@ -41,9 +41,9 @@
 
     <!--tap-bar-->
     <div id="tab-bar">
-        <button id="new-button" class="selected-tab" onclick="selectTab()"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="logo">New</button>
-        <button id="trending-button" onclick="selectTab()"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="logo">Trending</button>
-        <button id="favorites-button" onclick="selectTab()"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="logo">Favorites</button>
+        <button id="new-button" class="selected-tab" onclick="selectTab1()"><img src="https://ip.lfe.mw.tum.de/sections/lightbulb-o.png" alt="logo">New</button>
+        <button id="trending-button" onclick="selectTab2()"><img src="https://ip.lfe.mw.tum.de/sections/fire.png" alt="logo">Trending</button>
+        <button id="favorites-button" onclick="selectTab3()"><img src="https://ip.lfe.mw.tum.de/sections/star.png" alt="logo">Favorites</button>
     </div>
     </div>
 
@@ -88,7 +88,7 @@
     </div>
     </div>
     <div id="chat-bar">
-        <button id="emojis-button">
+        <button id="emojis-button" onclick="showEmojis()">
             <img src="http://ip.lfe.mw.tum.de/sections/smile-o.png">
         </button>
         <div id="emojis">

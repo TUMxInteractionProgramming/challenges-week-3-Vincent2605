@@ -43,7 +43,7 @@ body {
 #channels ul li img {
     vertical-align: middle;
 }
-#channels #selected-channel {
+#channels .selected-channel {
     color: #1818e2;
     border-left: 3px solid #1818e2;
 }
@@ -190,4 +190,7 @@ body {
 #emojis {
     border: 1px solid black;
     padding: 16px;
+    height: 100px;
+    width: 100px;
+    display: none;
 }
